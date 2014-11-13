@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol DieLabelDelegate
+//-(void) dieRolledWithValue:(int)value;
+-(void) dieRollDice;
+@end
+
 @interface DieLabel : UILabel
 
 -(void)roll;
+
+@property id<DieLabelDelegate> delegate;
 
 @end

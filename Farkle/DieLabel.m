@@ -20,7 +20,7 @@
 
 -(void)roll{
      NSLog(@" %@",self.text);
-    int valor = arc4random_uniform(5)+1;
+    int valor = arc4random_uniform(6)+1;
     self.text = [[NSNumber numberWithInt:valor] stringValue];
     NSLog(@" %@",self.text);
     
@@ -28,6 +28,15 @@
 
 -(IBAction)onTapped:(UITapGestureRecognizer *)sender {
     NSLog(@"Me toco");
+    
+    //CGPoint point = [sender locationInView:self.view];
+    //self.label1.center = point;
+    
+    
+   // if (CGRectContainsPoint(self.label1.frame, point)) {
+        
+   // }
+
 }
 
 @end
